@@ -21,7 +21,6 @@ def capture():
         timestamp = time.strftime("%Y%m%d-%H%M%S")
         image_path = f'./photo_{timestamp}.jpg'
         cv2.imwrite(image_path,frame)
-        arduino.write(b'CAPTURE\n')
         arduino.write(b'MELODY\n')
     cap.release()
     return redirect(url_for('index'))
