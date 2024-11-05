@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>IoT Interface</title>
+	</head>
+	<body>
+		<h1>Interface</h1>
+		<form action="/capture" method="post">
+			<button type="submit">Capture</button>
+		</form>
+
+		<form action="/7segment" method="post">
+			<input type="number" name="number" placeholder="Enter number">
+			<button type="submit">7-segment</button>
+		</form>
+
+		<form action="/lcd" method="post">
+			<input type="text" name="text" placeholder="Enter text">
+			<button type="submit">LCD</button>
+		</form>
+	</body>
+</html>
